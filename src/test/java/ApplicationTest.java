@@ -18,8 +18,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {edu.tongji.comm.controller.SimpleController.class})
-public class SimpleControllerTest {
+@SpringBootTest(classes = {edu.tongji.comm.Application.class})
+public class ApplicationTest {
 
     private MockMvc mvc;
 
