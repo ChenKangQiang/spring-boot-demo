@@ -15,10 +15,15 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
  * @date 2017/9/21
  *
  * SpringBoot单元测试
+ *
+ *
+ * SpringBootTest.WebEnvironment.RANDOM_PORT可以随机选取内嵌的tomcat的端口
+ *
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {edu.tongji.comm.Application.class})
+@SpringBootTest(classes = {edu.tongji.comm.Application.class},
+                webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ApplicationTest {
 
     private MockMvc mvc;
