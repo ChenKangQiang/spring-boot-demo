@@ -15,10 +15,9 @@ import org.springframework.context.annotation.Configuration;
 
 // @SpringBootApplication等价于同时使用@Configuration、@ComponentScan、@EnableAutoConfiguration
 
-//@Configuration
-//@ComponentScan
-//@EnableAutoConfiguration
-@SpringBootApplication
+@Configuration
+@ComponentScan
+@EnableAutoConfiguration
 public class Application {
 
     public static void main(String[] args) {
