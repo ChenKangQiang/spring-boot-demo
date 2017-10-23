@@ -13,10 +13,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @Author chenkangqiang
- * @Data 2017/10/5
+ * @author chenkangqiang
+ * @data 2017/10/5
  */
-
 @Controller
 public class HelloController {
 
