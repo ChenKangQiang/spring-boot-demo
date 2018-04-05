@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by chen on 2017/6/30.
+ * @author chen
  *
  * 基于JAVA的配置类一般位于root package里面
  *
