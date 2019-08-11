@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://comm.tongji.edu/schema/custom"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://comm.tongji.edu/schema/custom"
+            elementFormDefault="qualified">
+
+    <xsd:complexType name="apple">
+        <xsd:attribute name="id" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>
+                    <![CDATA[ The unique identifier for a bean. ]]>
+                </xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="price" type="xsd:int">
+            <xsd:annotation>
+                <xsd:documentation>
+                    <![CDATA[ The price for a bean. ]]>
+                </xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="origin" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>
+                    <![CDATA[ The origin of the bean. ]]>
+                </xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:element name="apple" type="apple">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[ The service config ]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+
+</xsd:schema>
