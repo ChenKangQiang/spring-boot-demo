@@ -21,6 +21,8 @@ public class CustomXmlTagTest {
     @Test
     public void testAppleBean() {
         System.out.println(apple);
+        System.out.println("origin: " + apple.getOrigin());
+        System.out.println("price: " + apple.getPrice());
     }
 
 }

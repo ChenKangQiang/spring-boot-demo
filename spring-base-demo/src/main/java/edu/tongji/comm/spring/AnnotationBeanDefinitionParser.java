@@ -17,12 +17,14 @@ public class AnnotationBeanDefinitionParser implements BeanDefinitionParser {
     @Override
     public BeanDefinition parse(Element element, ParserContext parserContext) {
         String id = element.getAttribute("id");
-        String name = element.getAttribute("name");
+        String origin = element.getAttribute("origin");
+        String price = element.getAttribute("price");
 
         //生成BeanDefinition
         RootBeanDefinition beanDefinition = new RootBeanDefinition();
         beanDefinition.setBeanClass(Apple.class);
-        beanDefinition.getPropertyValues().addPropertyValue("name", name);
+        beanDefinition.getPropertyValues().addPropertyValue("price", price);
+        beanDefinition.getPropertyValues().addPropertyValue("origin", origin);
 
         //注册BeanDefinition
         parserContext.getRegistry().registerBeanDefinition(id, beanDefinition);

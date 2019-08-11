@@ -15,6 +15,6 @@ public class CustomNameSpaceHandler extends NamespaceHandlerSupport {
 
     @Override
     public void init() {
-        this.registerBeanDefinitionParser("annotation-driven", new AnnotationBeanDefinitionParser());
+        this.registerBeanDefinitionParser("apple", new AnnotationBeanDefinitionParser());
     }
 }
