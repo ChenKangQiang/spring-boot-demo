@@ -2,6 +2,7 @@ package edu.tongji.comm.mapper;
 
 import edu.tongji.comm.entity.UserEntity;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 /**
  * @Description:
