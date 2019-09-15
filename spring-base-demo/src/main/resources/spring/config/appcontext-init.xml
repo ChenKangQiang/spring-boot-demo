@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:custom="http://comm.tongji.edu/schema/custom"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://comm.tongji.edu/schema/custom http://comm.tongji.edu/schema/custom-1.0.xsd">
+
+    <bean id="initializingTestBeanPostProcessor" class="edu.tongji.comm.initializing.InitializingTestBeanPostProcessor" />
+
+    <bean id="initializingTestBean" class="edu.tongji.comm.initializing.InitializingTestBean" init-method="init">
+        <constructor-arg name="propertyOne" value="hello" />
+        <constructor-arg name="propertyTwo" value="world" />
+        <constructor-arg name="type" value="edu.tongji.comm.initializing.Animal" />
+    </bean>
+
+</beans>

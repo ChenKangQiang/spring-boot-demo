@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.tongji.comm.mapper.UserMapper">
+
+    <resultMap id="userEntity" type="UserEntity">
+        <result column="UserName" property="userName"/>
+        <result column="Age" property="age"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="userEntity">
+        INSERT INTO UserTable
+        (
+        UserName,
+        Age
+        )
+        VALUES (
+        #{entity.userName},
+        #{entity.age}
+        )
+    </insert>
+
+    <select id="load" resultType="userEntity">
+        SELECT
+        ID
+        UserName,
+        Age
+        FROM UserTable
+        WHERE ID = #{id}
+    </select>
+
+
+</mapper>
